@@ -1,19 +1,28 @@
 package modell;
 
-public class Auto extends Jarmu{
+public class Auto extends Jarmu {
 
     private boolean defekt;
 
-    public Auto() {
-        
+    public Auto(boolean beinditva, boolean uzemanyag, boolean megerkezett) {
+        super(beinditva, uzemanyag, megerkezett);
+        this.defekt = false;
     }
-    
+
+    public Auto() {
+
+    }
+
     public void kereketCserel() {
         defekt = false;
     }
-    
+
+    @Override
     public boolean halad() {
-        return true;
-    } 
-    
+        if (!defekt) {
+            return true;
+        }
+        return false;
+    }
+
 }
