@@ -9,7 +9,7 @@ public class Auto extends Jarmu{
     }
     
     public void kereketCserel() {
-        
+        defekt = false;
     }
     
     public boolean halad() {

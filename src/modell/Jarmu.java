@@ -8,18 +8,18 @@ public abstract class Jarmu {
     }
     
     public void beindit() {
-        
+        beinditva = true;
     }
    
     public void leallit() {
-        
+        beinditva = false;
     }
     
     public boolean tankol() {
-        return true;
+        return uzemanyag;
     }
     
     public boolean halad() {
-        return true;
+        return megerkezett;
     }
 }
