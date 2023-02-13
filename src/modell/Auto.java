@@ -1,12 +1,8 @@
 package modell;
 
-public class Auto {
+public class Auto extends Jarmu{
 
-    public Auto(boolean defekt) {
-        this.defekt = defekt;
-    }
-    
-    private boolean defekt; 
+    private boolean defekt;
     
     public void kereketCserel() {
         
@@ -14,6 +10,6 @@ public class Auto {
     
     public boolean halad() {
         return true;
-    }
+    } 
     
 }
