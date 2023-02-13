@@ -17,11 +17,19 @@ public class Auto extends Jarmu {
         defekt = false;
     }
 
+    public void setDefekt(boolean defekt) {
+        this.defekt = defekt;
+    }
+    
+    
+
     @Override
     public boolean halad() {
-        if (!defekt) {
+        //return super.halad();
+        if (isBeinditva() && !defekt && isUzemanyag()) {
             return true;
         }
+        
         return false;
     }
 
